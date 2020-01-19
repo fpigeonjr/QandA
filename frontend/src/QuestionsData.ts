@@ -4,15 +4,14 @@ export interface QuestionData {
   content: string;
   userName: string;
   created: Date;
+  answers: AnswerData[];
 }
 
 export interface AnswerData {
-  questionId: number;
-  title: string;
+  answerId: number;
   content: string;
   userName: string;
   created: Date;
-  answers: AnswerData[];
 }
 
 const questions: QuestionData[] = [
