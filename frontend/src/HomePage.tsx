@@ -3,9 +3,9 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { PrimaryButton } from './Styles';
 import { QuestionList } from './QuestionList';
-import { getUnansweredQuestions } from './QuestionsData';
 import { Page } from './Page';
 import { PageTitle } from './PageTitle';
+import { getUnansweredQuestions } from './QuestionsData';
 
 export const HomePage = () => (
   <Page>
