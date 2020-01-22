@@ -1,7 +1,7 @@
-import React from 'react';
-import { UserIcon } from './Icons';
+import * as React from 'react';
 /**  @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import { UserIcon } from './Icons';
 import { fontFamily, fontSize, gray1, gray2, gray5 } from './Styles';
 
 export const Header = () => (
