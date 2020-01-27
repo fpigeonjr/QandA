@@ -11,6 +11,7 @@ import { getUnansweredQuestions, QuestionData } from './QuestionsData';
 export const HomePage = () => {
   const [questions, setQuestions] = useState<QuestionData[] | null>(null);
   const [questionsLoading, setQuestionsLoading] = useState(true);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const doGetUnansweredQuestions = async () => {
@@ -21,8 +22,10 @@ export const HomePage = () => {
     doGetUnansweredQuestions();
   }, []);
 
-  const handleAskQuestionClick = () =>
+  const handleAskQuestionClick = () => {
+    setCount(count + 1);
     console.log('TODO - Move to the AskPage');
+  };
 
   return (
     <Page>
